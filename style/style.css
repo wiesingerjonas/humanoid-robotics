@@ -1,0 +1,77 @@
+body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scene div {
+    position: relative;
+}
+
+nav {
+    width: 20vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+nav .active {
+    font-weight: bold;
+    color: #00558a;
+    text-shadow: none;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    text-align: justify;
+    margin: -1.5vmin;
+    color: white;
+    text-shadow: 3px 0px 0px rgba(121,121,121,0.5);
+    letter-spacing: .2em;
+}
+
+nav ul li:hover {
+    text-shadow: none;
+}
+
+.point {
+    width: 1.5vmin;
+    height: 1.5vmin;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+
+img {
+    width: 50vw;
+    position: absolute;
+}
