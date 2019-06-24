@@ -2,32 +2,33 @@ window.addEventListener('load', () => {
     const nav = document.getElementById('nav');
     const navElements = nav.getElementsByTagName('ul')[0].getElementsByTagName('li');
     const num = 468;
+    const scrollHeight = 722;
 
     setInterval(() => {
         if (scrollY >= 0 && scrollY < num) {
             navElements[1].classList.remove('active');
             navElements[0].classList.add('active');
-        } else if (scrollY >= num && scrollY < num + 1 * 720) {
+        } else if (scrollY >= num && scrollY < num + 1 * scrollHeight) {
             navElements[0].classList.remove('active');
             navElements[2].classList.remove('active');
             navElements[1].classList.add('active');
-        } else if (scrollY >= num && scrollY < num + 2 * 720) {
+        } else if (scrollY >= num && scrollY < num + 2 * scrollHeight) {
             navElements[1].classList.remove('active');
             navElements[3].classList.remove('active');
             navElements[2].classList.add('active');
-        } else if (scrollY >= num && scrollY < num + 3 * 720) {
+        } else if (scrollY >= num && scrollY < num + 3 * scrollHeight) {
             navElements[2].classList.remove('active');
             navElements[4].classList.remove('active');
             navElements[3].classList.add('active');
-        } else if (scrollY >= num && scrollY < num + 4 * 720) {
+        } else if (scrollY >= num && scrollY < num + 4 * scrollHeight) {
             navElements[3].classList.remove('active');
             navElements[5].classList.remove('active');
             navElements[4].classList.add('active');
-        } else if (scrollY >= num && scrollY < num + 5 * 720) {
+        } else if (scrollY >= num && scrollY < num + 5 * scrollHeight) {
             navElements[4].classList.remove('active');
             navElements[6].classList.remove('active');
             navElements[5].classList.add('active');
-        } else if (scrollY >= num && scrollY < num + 6 * 720) {
+        } else if (scrollY >= num && scrollY < num + 6 * scrollHeight) {
             navElements[5].classList.remove('active');
             navElements[6].classList.add('active');
         }           
@@ -41,7 +42,7 @@ window.addEventListener('load', () => {
 
     function scrollToSection(index) {
 
-        const goal = index * 720;
+        const goal = index * scrollHeight;
 
         const interval = setInterval(() => {
 
