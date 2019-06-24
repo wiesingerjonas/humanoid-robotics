@@ -51,11 +51,11 @@ window.addEventListener('load', () => {
                 scrollTo(0, scrollY + 30);
             }
 
-            if (goal === scrollY) {
+            if (goal <= scrollY + 30 && goal >= scrollY - 30) {
                 clearInterval(interval);
+                scrollTo(0, goal);
             }
 
         }, 10);
     }
-
 });
