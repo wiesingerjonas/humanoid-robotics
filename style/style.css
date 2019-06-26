@@ -32,7 +32,7 @@ section {
     background-color: #47d6ff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     user-select: none;
 }
 
