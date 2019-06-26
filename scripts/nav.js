@@ -4,31 +4,6 @@ window.addEventListener('load', () => {
     const num = 468;
     const scrollHeight = 722;
 
-    $.scrollify({
-        section : ".example-classname",
-        sectionName : "section-name",
-        interstitialSection : "",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset : 0,
-        scrollbars: true,
-        standardScrollElements: "",
-        setHeights: true,
-        overflowScroll: true,
-        updateHash: true,
-        touchScroll:true,
-        before:function() {},
-        after:function() {},
-        afterResize:function() {},
-        afterRender:function() {}
-      });
-
-    $(function() {
-        $.scrollify({
-          section : ".news",
-        });
-      });
-
     setInterval(() => {
         if (scrollY >= 0 && scrollY < num) {
             navElements[1].classList.remove('active');
