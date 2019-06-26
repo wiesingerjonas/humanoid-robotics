@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'TS Bold';
+    src: url(../font/ts.ttf) format('truetype');
+  }
+
 body {
     width: 100vw;
     height: auto;
@@ -21,8 +26,25 @@ section {
     align-items: center;
 }
 
-#scene div {
-    position: relative;
+#homeSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    user-select: none;
+}
+
+.scene {
+    position: absolute;
+    color: #fff001;
+}
+
+#maintext {
+    font-family: 'TS Bold';
+    font-size: 3vw;
+    text-align: center;
 }
 
 nav {
@@ -72,6 +94,6 @@ nav ul li:hover {
 }
 
 img {
-    width: 70vw;
+    width: 90vw;
     position: absolute;
 }
