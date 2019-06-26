@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 
         let visits = parseInt(window.localStorage.getItem('visits'));
 
-        if (visits % 20 === 0) {
+        if (visits % 20 !== 0) {
             scrollToNews();
         }
 
