@@ -1,4 +1,6 @@
 window.addEventListener('load', () => {
-    const scene = document.getElementById('scene');
-    let parallaxInstance = new Parallax(scene);
+    const scenes = document.getElementsByClassName('scene');
+    for (const scene of scenes) {
+        new Parallax(scene)
+    }
 });
