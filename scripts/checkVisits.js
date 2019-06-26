@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
 });
 
 function scrollToNews() {
-    const goal = 1 * 722;
+    const goal = 722;
 
         const interval = setInterval(() => {
 
