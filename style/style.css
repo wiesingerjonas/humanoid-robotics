@@ -20,7 +20,7 @@ body {
 section {
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/background.jpg);
+    background-color: #47d6ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +29,10 @@ section {
 #homeSection {
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/background.jpg);
+    background-color: #47d6ff;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     user-select: none;
 }
 
