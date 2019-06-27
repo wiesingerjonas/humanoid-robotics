@@ -30,10 +30,8 @@ window.addEventListener('load', () => {
         let outputArr = [dateBox, textBox];
 
         for (let i = 0; i < outputArr.length; i++) {
-            setTimeout(() => {
             outputArr[i].textContent = eintragData[i];
             newActivity.appendChild(outputArr[i]);
-            }, 250);
         }
         newActivity.setAttribute('class', 'activity');
         contentWrapper.appendChild(newActivity);
