@@ -1,0 +1,28 @@
+.member {
+    width: 50vw;
+    height: auto;
+    background-color: #ffffff4f;
+    padding: 0.5% 2.5%;
+    border-radius: 15px;
+    margin: 2%;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgWrapper {
+    height: 100%;
+    width: 17%;
+    padding-top: 2%;
+}
+
+.textWrapper {
+    width: 83%;
+    position: relative;
+    margin-right: 0;
+}
+
+.member img {
+    border-radius: 100%;
+    width: 7vw;
+}
