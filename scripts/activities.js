@@ -17,8 +17,8 @@ window.addEventListener('load', () => {
     
     for (let i = 0; i < activities.length; i++) {
         
-        let date = formatDate(activities[0].date);
-        let text = activities[0].text;
+        let date = formatDate(activities[i].date);
+        let text = activities[i].text;
 
         const contentWrapper = document.getElementById('activitiesWrapper');
         const newActivity = document.createElement('div');
