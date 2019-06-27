@@ -19,11 +19,12 @@ body {
 
 section {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #47d6ff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #homeSection {
@@ -34,6 +35,7 @@ section {
     justify-content: center;
     align-items: flex-end;
     user-select: none;
+    flex-direction: unset;
 }
 
 .scene {
