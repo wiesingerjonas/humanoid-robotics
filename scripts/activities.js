@@ -35,6 +35,7 @@ window.addEventListener('load', () => {
             newActivity.appendChild(outputArr[i]);
             }, 250);
         }
+        newActivity.setAttribute('class', 'activity');
         contentWrapper.appendChild(newActivity);
     }
 });
