@@ -2,9 +2,25 @@ window.addEventListener('load', () => {
     const nav = document.getElementById('nav');
     const navElements = nav.getElementsByTagName('ul')[0].getElementsByTagName('li');
     const num = 468;
-    const scrollHeight = 722;
+    const scrollHeight = 722;    
 
     setInterval(() => {
+
+        // for (let i = 0; i < navElements.length; i++) {
+        //     if (scrollY >= num && scrollY < num + i * scrollHeight) {
+
+        //         if (navElements[i-1] !== undefined) {
+        //             navElements[i-1].classList.remove('active');
+        //         }
+
+        //         if (navElements[i+1] !== undefined) {
+        //             navElements[i+1].classList.remove('active');
+        //         }
+
+        //         navElements[i].classList.add('active');    
+        //     }
+        // }
+
         if (scrollY >= 0 && scrollY < num) {
             navElements[1].classList.remove('active');
             navElements[0].classList.add('active');
