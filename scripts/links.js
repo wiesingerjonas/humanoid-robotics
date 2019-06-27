@@ -10,30 +10,28 @@ window.addEventListener('load', () =>{
 
       let textBox;
 
-      let br;
-
-    if(part.charAt(0) === '#' && part.charAt(1) === '#'){
+    if (part.charAt(0) === '#' && part.charAt(1) === '#') {
       textBox = document.createElement('h2');
 
-      if(part.charAt(2) === ' '){
+      if (part.charAt(2) === ' ') {
         part = part.substring(3, part.length);
-      }else{
+      } else {
         part = part.substring(2, part.length);
       }
 
-    }else if(part.charAt(0) === '#'){
+    } else if (part.charAt(0) === '#') {
       textBox = document.createElement('h1');
 
-      if(part.charAt(1) === ' '){
+      if (part.charAt(1) === ' ') {
         part = part.substring(2, part.length);
-      }else{
+      } else {
         part = part.substring(1, part.length);
       }
-    }else{
+    } else {
       textBox = document.createElement('p');
     }
 
-    if(part.charAt(0) === '-'){
+    if (part.charAt(0) === '-') {
       textBox = document.createElement('a');
 
       let link = part.split('(')[1].split(')')[0];
@@ -45,9 +43,9 @@ window.addEventListener('load', () =>{
 
     textBox.textContent = part;
     newContent.appendChild(textBox);
+    newContent.appendChild(document.createElement('br'));
 
     contentWrapper.appendChild(newContent);
 
   }
-
 });
