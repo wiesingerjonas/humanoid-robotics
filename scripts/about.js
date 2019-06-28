@@ -42,7 +42,7 @@ window.addEventListener('load', () =>{
 
     textBox.textContent = aboutContent.split('\n')[i];
     newContent.appendChild(textBox);
-ö
+
     contentWrapper.appendChild(newContent);
   }
 });
