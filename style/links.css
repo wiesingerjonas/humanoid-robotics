@@ -1,0 +1,7 @@
+a{
+  color: white;
+  transition: color 0.5s;
+}
+a:hover{
+  color: #c7d7f2;
+}

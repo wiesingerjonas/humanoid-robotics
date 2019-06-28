@@ -11,7 +11,7 @@ window.addEventListener('load', () =>{
       let textBox;
 
     if (part.charAt(0) === '#' && part.charAt(1) === '#') {
-      textBox = document.createElement('h2');
+      textBox = document.createElement('h3');
 
       if (part.charAt(2) === ' ') {
         part = part.substring(3, part.length);
@@ -20,7 +20,7 @@ window.addEventListener('load', () =>{
       }
 
     } else if (part.charAt(0) === '#') {
-      textBox = document.createElement('h1');
+      textBox = document.createElement('h2');
 
       if (part.charAt(1) === ' ') {
         part = part.substring(2, part.length);
@@ -37,6 +37,7 @@ window.addEventListener('load', () =>{
       let link = part.split('(')[1].split(')')[0];
 
       textBox.href = link;
+      textBox.target = "_blank";
 
       part = '- ' + part.split('[')[1].split(']')[0];
     }
